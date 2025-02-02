@@ -21,7 +21,7 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: Developed an interactive dashboard for healthcare professionals to monitor pandemic-related trends and patient data.
    -  [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Advanced-Data-Acquisition-and-COVID-19-Healthcare-Dashboard-D211)
 
-### 3. **🔍 Classification Analysis (D209 Task 1)**
+### 3. **🤖 Classification Analysis (D209 Task 1)**
    - **Description**: Built a classification model to predict patient outcomes such as disease presence or health risks.
    - **Tools Used**: Python, Scikit-learn, Jupyter Notebooks
    - **Outcome**: A model that predicts health outcomes with accuracy, helping in early disease detection.
@@ -33,7 +33,7 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: Identified meaningful patient groups to help tailor treatment plans.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Clustering-Techniques-D212-Task-1)
 
-### 5. **🔍 Data Dashboard And Storytelling (D212 Task 2)**
+### 5. ** Data Dashboard And Storytelling (D212 Task 2)**
    - **Description**: Developed an interactive Tableau dashboard to analyze and visualize COVID-19 death rates and healthcare accessibility across U.S. states, highlighting disparities and trends.
    - **Tools Used**: SQL, Tableau
    - **Outcome**: Users can interact with the dashboard to uncover key insights, such as mortality rates and doctor visit statistics, for informed decision-making.
@@ -45,7 +45,7 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: Simplified complex datasets, making them more manageable and easier to analyze.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Dimensionality-Reduction-Methods-D212-Task-2)
 
-### 7. **🧑‍⚕️ Exploratory Data Analysis (D207)**
+### 7. **🔍 Exploratory Data Analysis (D207)**
    - **Description**: Performed EDA on medical data to clean, preprocess, and visualize the data for deeper insights.
    - **Tools Used**: Python, Pandas, Matplotlib, Seaborn
    - **Outcome**: Cleaned and visualized data, laying the groundwork for further analysis.
