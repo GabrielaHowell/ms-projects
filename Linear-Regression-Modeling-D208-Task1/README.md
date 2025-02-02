@@ -1,4 +1,4 @@
-# 🚀 Performance Assessment: Linear Regression Modeling
+# 📈 Performance Assessment: Linear Regression Modeling
 
 ## 📌 Project Overview  
 This project involves the analysis and modeling of healthcare income data using **Multiple Linear Regression** in Python. The goal is to uncover the relationship between income levels and health conditions, providing insights that can help optimize healthcare policies and resource allocation. The project includes:  
@@ -7,7 +7,7 @@ This project involves the analysis and modeling of healthcare income data using 
 ✅ Actionable insights for healthcare decision-making 📈  
 
 <p align="center">
-  <img src="https://media.giphy.com/media/QBd2kLB5qDmysEXre9/giphy.gif" alt="Linear Regression">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzJqNnJpZ2hoOGlieG9ua3AzYXkwN3ZvOGR2MTJicnI3aHl6aWEwdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NGAkGHzGW86pNj4h49/giphy.gif" alt="Linear Regression">
 </p>
 
 ---
