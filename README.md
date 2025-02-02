@@ -15,7 +15,7 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
   <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTNjeG9lNmZhOXJqbWp4MGg1bTU1c2k0c3cyOXJobWJ3dWhkNzZrNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L59aKIC2MFyfUfrz3n/giphy.gif" alt="Capstone Project GIF"/>
 </p>
 
-### 2. **🦠 Advanced Data Acquisition & COVID-19 Healthcare Dashboard (D211)**
+### 2. **🚀 Advanced Data Acquisition (D211)**
    - **Description**: Acquired COVID-19 healthcare data and created an interactive dashboard to track pandemic trends and patient metrics.
    - **Tools Used**: Python, Pandas, Matplotlib, Plotly, SQL, Tableau
    - **Outcome**: Developed an interactive dashboard for healthcare professionals to monitor pandemic-related trends and patient data.
@@ -33,11 +33,11 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: Identified meaningful patient groups to help tailor treatment plans.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Clustering-Techniques-D212-Task-1)
 
-### 5. **🛹 Data Dashboard And Storytelling (D210)**
+### 5. **🦠 COVID-19 Dashboard & Storytelling (D210)**
    - **Description**: Developed an interactive Tableau dashboard to analyze and visualize COVID-19 death rates and healthcare accessibility across U.S. states, highlighting disparities and trends.
    - **Tools Used**: SQL, Tableau
    - **Outcome**: Users can interact with the dashboard to uncover key insights, such as mortality rates and doctor visit statistics, for informed decision-making.
-   - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Data-Dashboard-D212-Task-2)
+   - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Data-Dashboard-And-Storytelling-D210)
 
 ### 6. **🔬 Dimensionality Reduction Methods (D212 Task 2)**
    - **Description**: Used PCA and other techniques to reduce the dimensionality of large medical datasets, keeping only the most relevant features.
