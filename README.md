@@ -1,4 +1,4 @@
-# 🐱💻 Data Science Portfolio: Master's Projects in Healthcare Analytics 🎓
+# 🐱💻 Data Science Portfolio: Master's Projects 🎓
 
 Welcome to my data science portfolio! Here, I showcase projects I completed during my master's degree, focusing on healthcare data and other analytical techniques like predictive modeling, clustering, and more. Each project demonstrates my ability to transform raw data into valuable insights. Below is an overview of the projects, including the key technologies used and the type of data leveraged.
 
