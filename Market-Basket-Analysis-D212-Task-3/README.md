@@ -1,4 +1,4 @@
-# 🚀 Market Basket Analysis for Hospital Data
+# 🛒 Market Basket Analysis for Hospital Data
 
 ## 📌 Project Overview  
 This project aims to analyze prescription data using **Market Basket Analysis** techniques, such as **Association Rule Mining** and the **Apriori Algorithm**, to identify key associations that can drive strategic decisions. The goal is to enhance patient care, reduce readmissions, and improve diabetes management within the hospital system. The project includes:  
