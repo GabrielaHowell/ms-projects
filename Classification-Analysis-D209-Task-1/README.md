@@ -8,7 +8,9 @@ This project uses **K-Nearest Neighbors (KNN)** to classify anxiety diagnoses ba
 ✅ KNN classification model implementation 🤖  
 ✅ Evaluation metrics (accuracy, AUC) 📊  
 
-![KNN Classification GIF](https://media.giphy.com/media/7l8phdYpDLapQxaORg/giphy.gif)
+<p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNngzY2pxeDU2aWN3YnQxMWg1eHFlbXN2ejR2dWQ4OXQxMzRxOWd6dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEhmQUnz8BTT1nf0c/giphy.gif" alt="KNN Classification GIF">
+</p>
 
 ---
 
