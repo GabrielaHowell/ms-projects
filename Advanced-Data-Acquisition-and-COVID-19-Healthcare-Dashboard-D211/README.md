@@ -6,7 +6,9 @@ This project involves the analysis and visualization of CDC data using **SQL** a
 ✅ An interactive **Tableau** dashboard 📈  
 ✅ An **Entity-Relationship Diagram (ERD)** for database design 🗂️  
 
-![Data Visualization](https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif)
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzRnMGRqdDRwbXoxbm03YXpicnQ3MGZjZ3draXd5bGx4dmk3MnA3YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dyWxsX8ML1vScnFxEy/giphy.gif" alt="Predictive Analysis">
+</p>
 
 ---
 
