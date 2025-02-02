@@ -1,4 +1,4 @@
-# Anxiety Classification: KNN in Action 🤖
+# 🤖 Anxiety Classification: KNN in Action
 
 Welcome to the **Anxiety Classification** project! This initiative leverages **K-Nearest Neighbors (KNN)** to predict anxiety diagnoses based on a variety of health-related features. The aim is to identify key factors that can help healthcare providers better understand and predict anxiety in patients. 🧠
 
@@ -9,7 +9,7 @@ This project uses **K-Nearest Neighbors (KNN)** to classify anxiety diagnoses ba
 ✅ Evaluation metrics (accuracy, AUC) 📊  
 
 <p align="center">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNngzY2pxeDU2aWN3YnQxMWg1eHFlbXN2ejR2dWQ4OXQxMzRxOWd6dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEhmQUnz8BTT1nf0c/giphy.gif" alt="KNN Classification GIF">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNjOHlsYWI3aWJ6dXpmeDJvZWkyemVtbzJyMThmYm1sNzRzY3dyMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2JhFJNE7hRfd7560/giphy.gif" alt="KNN Classification GIF">
 </p>
 
 ---
