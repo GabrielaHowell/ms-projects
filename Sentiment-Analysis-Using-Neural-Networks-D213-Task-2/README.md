@@ -28,10 +28,7 @@ This project involves performing **Sentiment Analysis** using **Neural Networks*
 📌 **Composition**:  
 - 500 positive and 500 negative sentences from each source  
 - Sentences were selected to have a clear positive or negative connotation, avoiding neutral statements.  
-📌 **Full Datasets**:  
-- IMDb: *Maas et al., 2011 – Learning word vectors for sentiment analysis*  
-- Amazon: *McAuley et al., 2013 – Hidden factors and hidden topics: Understanding rating dimensions with review text*  
-- Yelp: *Yelp Dataset Challenge* ([Yelp Dataset](http://www.yelp.com/dataset_challenge))  
+ 
 
 ---
 
