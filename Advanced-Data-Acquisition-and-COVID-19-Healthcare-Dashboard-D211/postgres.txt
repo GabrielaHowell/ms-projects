@@ -1,0 +1,49 @@
+--If run into issues please restart and drop tables
+DROP TABLE public.cdc_data_staging;
+DROP TABLE public.cdc_data;
+
+-- Step 1: Create Final Table
+CREATE TABLE public.cdc_data ( id SERIAL PRIMARY KEY, date_updated DATE, state VARCHAR(2), start_date DATE, end_date DATE, tot_cases INT CHECK (tot_cases >= 0), new_cases INT CHECK (new_cases >= 0), tot_deaths INT CHECK (tot_deaths >= 0), new_deaths INT CHECK (new_deaths >= 0), new_historic_cases INT CHECK (new_historic_cases >= 0), new_historic_deaths INT CHECK (new_historic_deaths >= 0) );
+
+ -- Step 2: Create Staging Table
+CREATE TABLE public.cdc_data_staging ( date_updated VARCHAR(10), state VARCHAR(3), start_date VARCHAR(10), end_date VARCHAR(10), tot_cases INT, new_cases INT, tot_deaths INT, new_deaths INT, new_historic_cases INT, new_historic_deaths INT );
+
+ -- Step 3: Load Data into Staging Table
+--command " "\\copy public.cdc_data_staging (date_updated, state, start_date, end_date, tot_cases, new_cases, tot_deaths, new_deaths, new_historic_cases, new_historic_deaths) FROM 'C:/Users/LabUser/DOWNLO~1/WEEKLY~1.CSV' DELIMITER ',' CSV HEADER QUOTE '\"' ESCAPE '''';""
+
+-- Step 4: Verify Data in Staging Table
+SELECT * FROM public.cdc_data_staging LIMIT 10;
+
+-- Step 5: Remove Non-US States
+-- Select unique states that are not in the list of U.S. state abbreviations
+WITH us_states AS ( SELECT 'AL' AS state UNION ALL SELECT 'AK' UNION ALL SELECT 'AZ' UNION ALL SELECT 'AR' UNION ALL SELECT 'CA' UNION ALL SELECT 'CO' UNION ALL SELECT 'CT' UNION ALL SELECT 'DE' UNION ALL SELECT 'FL' UNION ALL SELECT 'GA' UNION ALL SELECT 'HI' UNION ALL SELECT 'ID' UNION ALL SELECT 'IL' UNION ALL SELECT 'IN' UNION ALL SELECT 'IA' UNION ALL SELECT 'KS' UNION ALL SELECT 'KY' UNION ALL SELECT 'LA' UNION ALL SELECT 'ME' UNION ALL SELECT 'MD' UNION ALL SELECT 'MA' UNION ALL SELECT 'MI' UNION ALL SELECT 'MN' UNION ALL SELECT 'MS' UNION ALL SELECT 'MO' UNION ALL SELECT 'MT' UNION ALL SELECT 'NE' UNION ALL SELECT 'NV' UNION ALL SELECT 'NH' UNION ALL SELECT 'NJ' UNION ALL SELECT 'NM' UNION ALL SELECT 'NY' UNION ALL SELECT 'NC' UNION ALL SELECT 'ND' UNION ALL SELECT 'OH' UNION ALL SELECT 'OK' UNION ALL SELECT 'OR' UNION ALL SELECT 'PA' UNION ALL SELECT 'RI' UNION ALL SELECT 'SC' UNION ALL SELECT 'SD' UNION ALL SELECT 'TN' UNION ALL SELECT 'TX' UNION ALL SELECT 'UT' UNION ALL SELECT 'VT' UNION ALL SELECT 'VA' UNION ALL SELECT 'WA' UNION ALL SELECT 'WV' UNION ALL SELECT 'WI' UNION ALL SELECT 'WY' )
+SELECT DISTINCT state FROM public.cdc_data_staging WHERE state NOT IN (SELECT state FROM us_states);
+
+--Delete the  Non-US States
+WITH us_states AS ( SELECT 'AL' AS state UNION ALL SELECT 'AK' UNION ALL SELECT 'AZ' UNION ALL SELECT 'AR' UNION ALL SELECT 'CA' UNION ALL SELECT 'CO' UNION ALL SELECT 'CT' UNION ALL SELECT 'DE' UNION ALL SELECT 'FL' UNION ALL SELECT 'GA' UNION ALL SELECT 'HI' UNION ALL SELECT 'ID' UNION ALL SELECT 'IL' UNION ALL SELECT 'IN' UNION ALL SELECT 'IA' UNION ALL SELECT 'KS' UNION ALL SELECT 'KY' UNION ALL SELECT 'LA' UNION ALL SELECT 'ME' UNION ALL SELECT 'MD' UNION ALL SELECT 'MA' UNION ALL SELECT 'MI' UNION ALL SELECT 'MN' UNION ALL SELECT 'MS' UNION ALL SELECT 'MO' UNION ALL SELECT 'MT' UNION ALL SELECT 'NE' UNION ALL SELECT 'NV' UNION ALL SELECT 'NH' UNION ALL SELECT 'NJ' UNION ALL SELECT 'NM' UNION ALL SELECT 'NY' UNION ALL SELECT 'NC' UNION ALL SELECT 'ND' UNION ALL SELECT 'OH' UNION ALL SELECT 'OK' UNION ALL SELECT 'OR' UNION ALL SELECT 'PA' UNION ALL SELECT 'RI' UNION ALL SELECT 'SC' UNION ALL SELECT 'SD' UNION ALL SELECT 'TN' UNION ALL SELECT 'TX' UNION ALL SELECT 'UT' UNION ALL SELECT 'VT' UNION ALL SELECT 'VA' UNION ALL SELECT 'WA' UNION ALL SELECT 'WV' UNION ALL SELECT 'WI' UNION ALL SELECT 'WY' )
+DELETE FROM public.cdc_data_staging WHERE state NOT IN (SELECT state FROM us_states);
+
+
+-- Step 6: Check for Invalid Dates
+SELECT * FROM public.cdc_data_staging WHERE TO_DATE(date_updated, 'MM/DD/YYYY') IS NULL OR TO_DATE(start_date, 'MM/DD/YYYY') IS NULL OR TO_DATE(end_date, 'MM/DD/YYYY') IS NULL;
+
+ -- Check for Rows Violating Constraints
+SELECT * FROM public.cdc_data_staging WHERE tot_cases < 0 OR new_cases < 0 OR tot_deaths < 0 OR new_deaths < 0 OR new_historic_cases < 0 OR new_historic_deaths < 0;
+
+ -- Remove Rows Violating Constraints
+ DELETE FROM public.cdc_data_staging WHERE tot_cases < 0 OR new_cases < 0 OR tot_deaths < 0 OR new_deaths < 0 OR new_historic_cases < 0 OR new_historic_deaths < 0;
+
+ -- Verify that no rows with invalid data remain
+ SELECT * FROM public.cdc_data_staging WHERE tot_cases < 0 OR new_cases < 0 OR tot_deaths < 0 OR new_deaths < 0 OR new_historic_cases < 0 OR new_historic_deaths < 0;
+
+ -- Step 7: Insert Data into Final Table
+INSERT INTO public.cdc_data (date_updated, state, start_date, end_date, tot_cases, new_cases, tot_deaths, new_deaths, new_historic_cases, new_historic_deaths) SELECT TO_DATE(date_updated, 'MM/DD/YYYY'), state, TO_DATE(start_date, 'MM/DD/YYYY'), TO_DATE(end_date, 'MM/DD/YYYY'), tot_cases, new_cases, tot_deaths, new_deaths, new_historic_cases, new_historic_deaths FROM public.cdc_data_staging;
+
+ -- Step 8: Set the Owner of the Final Table
+ALTER TABLE IF EXISTS public.cdc_data OWNER TO postgres;
+
+ -- Step 9: Drop the Staging Table
+DROP TABLE public.cdc_data_staging;
+
+ -- Step 10: Verify Data in Final Table
+SELECT * FROM public.cdc_data LIMIT 10;
