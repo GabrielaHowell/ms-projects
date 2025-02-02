@@ -33,7 +33,7 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: Identified meaningful patient groups to help tailor treatment plans.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Clustering-Techniques-D212-Task-1)
 
-### 5. ** Data Dashboard And Storytelling (D212 Task 2)**
+### 5. **🛹 Data Dashboard And Storytelling (D210)**
    - **Description**: Developed an interactive Tableau dashboard to analyze and visualize COVID-19 death rates and healthcare accessibility across U.S. states, highlighting disparities and trends.
    - **Tools Used**: SQL, Tableau
    - **Outcome**: Users can interact with the dashboard to uncover key insights, such as mortality rates and doctor visit statistics, for informed decision-making.
