@@ -27,7 +27,7 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: A model that predicts health outcomes with accuracy, helping in early disease detection.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Classification-Analysis-D209-Task-1)
 
-### 4. **📊 Clustering Techniques (D212 Task 1)**
+### 4. **🏥 Clustering Techniques (D212 Task 1)**
    - **Description**: Applied clustering algorithms like K-means to group patients based on their medical data.
    - **Tools Used**: Python, Scikit-learn, Matplotlib, Seaborn
    - **Outcome**: Identified meaningful patient groups to help tailor treatment plans.
@@ -75,13 +75,13 @@ Welcome to my data science portfolio! Here, I showcase projects I completed duri
    - **Outcome**: A predictive model that can help healthcare providers anticipate patient needs and outcomes.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Predictive-Analysis-D209-Task-2)
 
-### 12. **💬 Sentiment Analysis Using Neural Networks (D213 Task 2)**
+### 12. **🧠 Sentiment Analysis Using Neural Networks (D213 Task 2)**
    - **Description**: Applied neural networks to analyze patient feedback and reviews to gauge sentiment regarding healthcare services.
    - **Tools Used**: Python, TensorFlow, Keras, NLP
    - **Outcome**: A neural network that classifies feedback sentiment as positive, negative, or neutral, providing valuable insights into patient satisfaction.
    - [View the Project](https://github.com/GabrielaHowell/my-projects/tree/main/Sentiment-Analysis-Using-Neural-Networks-D213-Task-2)
 
-### 13. **📅 Time Series Modeling (D213 Task 1)**
+### 13. **⏳ Time Series Modeling (D213 Task 1)**
    - **Description**: Used ARIMA models to analyze and forecast time series data, including hospital revenue and patient visit trends.
    - **Tools Used**: Python, Statsmodels
    - **Outcome**: Accurate forecasts that assist healthcare administrators in planning for future patient inflow and revenue.
