@@ -1,4 +1,4 @@
-# 🚀 Predictive Analysis: Data Mining
+# 🔮 Predictive Analysis: Data Mining
 
 ## 📌 Project Overview  
 This project involves the predictive analysis of healthcare data using **Decision Trees** enhanced with **AdaBoost** in **Python** to support data-driven decision making. The project includes:  
