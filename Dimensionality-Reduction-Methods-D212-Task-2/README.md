@@ -1,4 +1,4 @@
-# 🔍 Principal Component Analysis (PCA) for Medical Data
+# 🔬 Principal Component Analysis (PCA) for Medical Data
 
 ## 📌 Project Overview  
 This project demonstrates the application of **Principal Component Analysis (PCA)** to identify key features in a medical dataset. The goal is to simplify complex data while retaining critical information. It includes:  
