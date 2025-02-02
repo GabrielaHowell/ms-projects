@@ -1,4 +1,4 @@
-# 🎯 Sentiment Analysis with Deep Features
+# 🧠 Sentiment Analysis with Deep Features
 
 ## 📌 Project Overview  
 This project involves performing **Sentiment Analysis** using **Neural Networks** and **NLP Techniques** on data sourced from **IMDb, Amazon, and Yelp**. The dataset is derived from the paper *From Group to Individual Labels using Deep Features* (Kotzias et al., KDD 2015). The project includes:  
