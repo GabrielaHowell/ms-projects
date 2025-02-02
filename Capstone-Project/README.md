@@ -1,4 +1,4 @@
-# 🚀 Ethereum Price Prediction Using Multiple Linear Regression (MLR)
+# 🎓 Ethereum Price Prediction Using Multiple Linear Regression (MLR)
 
 Welcome to the **Ethereum Price Prediction** project! In this capstone project, we apply **Multiple Linear Regression (MLR)** to predict Ethereum’s closing price based on historical market data. The insights from this project aim to help traders and analysts in forecasting Ethereum's price trends, offering valuable assistance for decision-making.
 
