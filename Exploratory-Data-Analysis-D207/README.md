@@ -1,48 +1,47 @@
-# 🚀 Market Basket Analysis for Hospital Data
+# 🚀 Performance Assessment: Exploratory Data Analysis
 
 ## 📌 Project Overview  
-This project aims to analyze prescription data using **Market Basket Analysis** techniques, such as **Association Rule Mining** and the **Apriori Algorithm**, to identify key associations that can drive strategic decisions. The goal is to enhance patient care, reduce readmissions, and improve diabetes management within the hospital system. The project includes:  
-✅ Data preprocessing for medical prescriptions and hospital services 📊  
-✅ Market Basket Analysis to uncover frequent patterns 🛒  
-✅ Insights visualized through interactive **Tableau** dashboards 📈  
+This project involves the analysis and visualization of hospital readmission data using statistical tests and visualizations in **Python** to support data-driven healthcare decision-making. The project includes:  
+✅ A structured dataset 📊  
+✅ An interactive **Python Notebook** for exploratory analysis 🔍  
+✅ Visualizations such as contingency tables, histograms, box plots, and heatmaps 📈  
 
 <p align="center">
-  <img src=https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXVhd2VnZ2g5emx3eDJoOTNkc2Q5c2xpMzR3azVnOW5kNGdidmtqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hsbBuswSSurd7j2yv6/giphy.gif>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3o3OXp3MHRuaXE4anJ1YjZqMXVhcjdvNHpnOGdudWltaDVxaXExMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CuKEZdZ3V01gI/giphy.gif" alt="Exploring Data">
 </p>
 
 ---
 
 ## 📂 Contents  
-- **Written Report** – Detailed documentation of the project, methodology, and findings.  
-- **ERD Picture** – A visual representation of the database schema.  
-- **Tableau Workbook** – A pre-built Tableau workbook showcasing the results of the analysis.
+📄 **Written Report** – Detailed documentation of the project, methodology, and findings.  
+🖼️ **Data Dictionary** – A visual representation and description of the dataset’s variables.  
+📊 **Python Notebook** – An interactive Notebook (`PA_D20_V3.ipynb`) showcasing the exploratory analysis.
 
 ---
 
 ## 🗃️ Data Sources  
-📌 **Hospital_Healthcare_Prescriptions** (provided by the hospital)  
-📌 **Prescription_Data** (publicly available patient prescription data)
+📌 **Medical Dataset** (provided by WGU)  
+📌 **Journal of Family Medicine and Primary Care Data** (as referenced by Samuel et al., 2022)
 
 ---
 
 ## ⚙️ Setup Instructions  
 
-### 🛠️ SQL Database Setup  
-1️⃣ Import and preprocess the **Prescription Data** using the provided SQL script.  
-2️⃣ Clean the data to remove duplicates, handle missing values, and ensure consistency for analysis.
+### 🛠️ Data Preparation  
+1️⃣ Run the provided **Python Notebook** to clean and prepare the dataset.  
+2️⃣ Review the **Data Dictionary** for details on key variables such as `Timely_admission` and `ReAdmis`.
 
-### 📊 Tableau Dashboard  
-1️⃣ Load the provided **Tableau workbook**.  
-2️⃣ Use the interactive filters to explore different patterns and associations related to hospital readmissions and prescriptions.
+### 🔍 Exploratory Data Analysis  
+1️⃣ Execute the Notebook to perform the chi-square test for independence between `Timely_admission` and `ReAdmis`.  
+2️⃣ Generate and examine visualizations including histograms, box plots, and heatmaps to gain insights into the data distributions and relationships.
 
 ---
 
-## 🎯 How to Use the Dashboard  
-🔍 **Filter** data by **prescription type** and **patient demographics** to identify key patterns.  
-📊 **Explore** associations between prescriptions and hospital services.  
-📤 **Export** the analysis to share insights with healthcare providers and decision-makers.  
+## 🎯 How to Use the Analysis  
+🔍 **Review** the Written Report to understand the methodology, statistical tests, and key insights.  
+📊 **Interact** with the Python Notebook to explore visualizations and statistical outputs.  
+📤 **Export** your findings and share the insights with healthcare stakeholders to drive informed decision-making.
 
-For **detailed step-by-step instructions**, refer to the **written report** included in the submission.
+For detailed step-by-step instructions, refer to the Written Report included in the submission.
 
 🚀 Happy Analyzing! 😃
-
