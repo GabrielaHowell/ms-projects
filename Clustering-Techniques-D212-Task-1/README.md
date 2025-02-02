@@ -3,7 +3,9 @@
 ## 📌 Project Overview  
 This project uses **K-means clustering** to analyze patient data and identify patterns related to **Age**, **Income**, **VitD_levels**, and **TotalCharge**. The goal is to help healthcare organizations improve care strategies and reduce readmissions.
 
-![Data Visualization](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2g4NDQ3N3ZzamtoYXAxbTZrcHd3OHVtOXk5aWt6cnByOXN6ZWhkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/if9lMbGKKOMGuksCqQ/giphy.gif)
+  <p align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2g4NDQ3N3ZzamtoYXAxbTZrcHd3OHVtOXk5aWt6cnByOXN6ZWhkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/if9lMbGKKOMGuksCqQ/giphy.gif" alt="Patient Clustering Analysi">
+</p>
 
 ---
 
