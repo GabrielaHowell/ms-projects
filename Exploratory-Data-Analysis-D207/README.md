@@ -1,4 +1,4 @@
-# 🚀 Performance Assessment: Exploratory Data Analysis
+# 🔍 Performance Assessment: Exploratory Data Analysis
 
 ## 📌 Project Overview  
 This project involves the analysis and visualization of hospital readmission data using statistical tests and visualizations in **Python** to support data-driven healthcare decision-making. The project includes:  
