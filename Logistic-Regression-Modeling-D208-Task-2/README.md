@@ -1,4 +1,4 @@
-# 🚀 Performance Assessment: Logistic Regression Modeling
+# 🩺 Performance Assessment: Logistic Regression Modeling
 
 ## 📌 Project Overview  
 This project involves analyzing a medical dataset using **Logistic Regression** in Python to identify the factors that contribute to the likelihood of patient readmission. The primary research question is:  
